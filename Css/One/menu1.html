@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <style>
+        body {
+            font-family: "Roboto";
+        }
+        
+        ul.left {
+            float: left;
+        }
+        
+        ul.vertital-fixed-width {
+            width: 30%;
+            list-style-type: none;
+            background-color: #ddd;
+            padding: 0;
+            margin: 0;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        ul.vertital-fixed-width li a {
+            text-decoration: none;
+            padding: 16px;
+            color: #000;
+            display: block;
+        }
+        
+        ul.vertital-fixed-width li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        ul.vertital-fixed-width li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+        ul.horizontal-fixed-width {
+            width: 60%;
+            list-style-type: none;
+            overflow: hidden;
+            background-color: #222;
+            padding: 0;
+            margin: 0;
+        }
+        
+        ul.horizontal-fixed-width li {
+            float: left;
+        }
+        
+        ul.horizontal-fixed-width li a {
+            display: block;
+            padding: 16px 32px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        ul.horizontal-fixed-width li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        ul.horizontal-fixed-width li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+        @media only screen and (max-width: 1000px) {
+            /* If the browser window is 1000px or smaller, then */
+            ul.left {
+                float: none;
+            }
+            ul.vertital-fixed-width {
+                width: 100%;
+            }
+            ul.horizontal-fixed-width {
+                width: 100%;
+            }
+            ul.horizontal-fixed-width li {
+                float: none;
+            }
+        }
+        
+        .clearfix {
+            overflow: auto;
+        }
+        /* .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="clearfix">
+        <ul class="vertital-fixed-width left">
+            <li><a class="active">Home</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+            <li><a>About</a></li>
+            <li><a>Feedback</a></li>
+        </ul>
+        <ul class="horizontal-fixed-width left">
+            <li><a class="active">Home</a></li>
+            <li><a>News</a></li>
+            <li><a>Contact</a></li>
+            <li><a>About</a></li>
+            <li><a>Feedback</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

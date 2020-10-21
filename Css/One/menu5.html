@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 5</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Roboto";
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #222;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li.right {
+            float: right;
+        }
+        
+        li a {
+            display: block;
+            padding: 16px;
+            color: #fff;
+        }
+        
+        li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+        .container {
+            padding: 10px;
+        }
+        
+        .container h4 {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+        
+        .container p {
+            line-height: 1.6;
+        }
+        
+        @media screen and (max-width: 800px) {
+            li,
+            li.right {
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active">Home</a></li>
+        <li><a>News</a></li>
+        <li><a>Contact</a></li>
+        <li class="right"><a>About</a></li>
+    </ul>
+    <div class="container">
+        <h4>Responsive Topnav Example</h4>
+        <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+</body>
+
+</html>
