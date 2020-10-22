@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5 (Float)</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Roboto";
+        }
+        
+        .row {
+            margin: 0 auto;
+        }
+        
+        .column {
+            float: left;
+        }
+        
+        .left {
+            width: 30%;
+            box-sizing: border-box;
+            padding: 200px 0px;
+            text-align: center;
+            background-color: #ddd;
+            font-size: 30px;
+            color: white;
+        }
+        
+        .right {
+            width: 70%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        
+        h4 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            line-height: 1.6;
+        }
+        
+        .button {
+            border: 2px solid #222;
+            padding: 10px 40px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .column {
+                float: none;
+            }
+            .left,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column left">
+            <p class="banner">Học Web Chuẩn</p>
+        </div>
+        <div class="column right">
+            <h4>Vestibulum ullamcorper ut leo quis</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Dolorem placeat, praesentium alias ipsa ab sed quisquam molestias, culpa vel fugit repellat, obcaecati fuga labore ipsum maiores quas exercitationem sint earum.</p>
+            <p style="margin-bottom: 20px; margin-top: 20px;">Dolorem placeat, praesentium alias ipsa ab sed quisquam molestias, culpa vel fugit repellat, obcaecati fuga labore ipsum maiores quas exercitationem sint earum.</p>
+            <p style="margin-bottom: 20px; margin-top: 20px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <a class="button">Detail</a>
+        </div>
+    </div>
+</body>
+
+</html>
