@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        
+        h3 {
+            font-size: 24px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .row {
+            margin-top: 10px;
+        }
+        
+        .col-float {
+            float: left;
+        }
+        
+        .left,
+        .right {
+            width: 50%;
+        }
+        
+        .left .input-text {
+            width: 85%;
+        }
+        
+        .right .input-text {
+            width: 96%;
+        }
+        
+        .input-text {
+            padding: 16px;
+            width: 98%;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+        
+        a.button {
+            padding: 16px 30px;
+            display: inline-block;
+            background-color: #7DCEFD;
+            border-radius: 5px;
+            border: 1px solid #006ba8;
+            color: white;
+        }
+        
+        a.required {
+            font-size: 20px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Get in touch with us by filling contact form below</h3>
+        <div class="table">
+            <div class="row">
+                <div class="col-float left">
+                    <input type="text" class="input-text" placeholder="* Enter your full name">
+                </div>
+                <div class="col-float right">
+                    <input type="text" class="input-text" placeholder="* Enter your email address">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="input-text" placeholder="* Enter your subject">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <textarea type="text" class="input-text" placeholder="* Your message here" rows="12"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-float left">
+                    <a class="button">Send message</a>
+                </div>
+                <div class="col-float right">
+                    <a class="required">* Please fill all require form field, thanks!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

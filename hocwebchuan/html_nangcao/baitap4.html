@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 700px;
+            padding: 10px;
+            background-color: #eee;
+            margin: 0 auto;
+        }
+        
+        .row {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            border-bottom: 1px dashed red;
+        }
+        
+        .row:last-child {
+            border-bottom: none;
+        }
+        
+        .column-1 {
+            flex: 1;
+        }
+        
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: #D997DE;
+            border-radius: 5px;
+        }
+        
+        .image a {
+            display: block;
+            font-size: 50px;
+            color: white;
+        }
+        
+        .column-2 {
+            margin-left: 20px;
+            flex: 7;
+        }
+        
+        h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        
+        .column-2 p {
+            line-height: 1.6;
+            font-size: 18px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column-1">
+                <div class="image">
+                    <a>H</a>
+                </div>
+            </div>
+            <div class="column-2">
+                <h3>CLIMATE CHANGE</h3>
+                <p>Etiam cras ac sapien ipsum. Morbi scelerisque efficitur nibh a fringilla. Nam et diam vel justo praesent rhoncus volutpat turpis vitae hendrerit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-1">
+                <div class="image">
+                    <a>H</a>
+                </div>
+            </div>
+            <div class="column-2">
+                <h3>COMPREHENSIVE IMMIGRATION REFORM</h3>
+                <p>Morbi scelerisque efficitur nibh a fringilla. Nam et diam vel justo feugiat venenatis. Praesent rhoncus volutpat turpis vitae hendrerit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-1">
+                <div class="image">
+                    <a>H</a>
+                </div>
+            </div>
+            <div class="column-2">
+                <h3>ECONOMIC OPPORTUNITY</h3>
+                <p>Phasellus vulputate pharetra tempor. Aliquam in tortor in arcu iaculis malesuada, nam et diam vel justo feugiat venenatis.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column-1">
+                <div class="image">
+                    <a>H</a>
+                </div>
+            </div>
+            <div class="column-2">
+                <h3>HEALTH CARE</h3>
+                <p>onec feugiat ipsum ac risus auctor dignissim. Phasellus ante dolor, molestie vitae malesuada id, posuere non est.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-color: #eee;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        h3 {
+            margin-top: 50px;
+            font-size: 50px;
+        }
+        
+        h5 {
+            line-height: 1.6;
+            color: #666;
+            font-size: 16px;
+            font-weight: lighter;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        .column {
+            flex: 1;
+            background-color: #fff;
+        }
+        
+        .column:nth-child(2) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .title {
+            padding: 10px;
+        }
+        
+        .title h4 {
+            font-size: 26px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .title p {
+            text-align: left;
+            line-height: 1.6;
+        }
+        
+        .column a {
+            display: block;
+            padding: 60px;
+            font-size: 24px;
+            color: white;
+            background-color: #91E0E6;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .row {
+                flex-direction: column;
+            }
+            .column:nth-child(2) {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Our Service</h3>
+        <h5>Our Service lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ipsum erat. Donec feugiat ipsum ac risus auctor dignissim. Phasellus ante dolor, molestie vitae malesuada id, posuere non est.</h5>
+        <div class="row">
+            <div class="column">
+                <p><a>Học Web Chuẩn</a></p>
+                <div class="title">
+                    <h4>Smart Swatch Editions</h4>
+                    <p>Smart Swatch Editions Augue et dapibus. Nullam venenatis ornare arcu at placerat. Ut eget metus velit. Nam porttitor, arcu eu efficitur ornare, turpis nulla vehicula mauris.</p>
+                </div>
+            </div>
+            <div class="column">
+                <p><a>Học Web Chuẩn</a></p>
+                <div class="title">
+                    <h4>Web UI Kit Design</h4>
+                    <p>Donec feugiat ipsum ac risus auctor dignissim. Phasellus ante dolor, molestie vitae malesuada id, posuere non est..</p>
+                </div>
+            </div>
+            <div class="column">
+                <p><a>Học Web Chuẩn</a></p>
+                <div class="title">
+                    <h4>Mobile Optimization</h4>
+                    <p>Etiam rutrum, dolor vitae aliquet finibus, erat quam lacinia nisl, quis tristique dolor ex vel ipsum. Vestibulum rutrum tincidunt tellus. Etiam euismod est.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

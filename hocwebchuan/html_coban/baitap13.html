@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 13</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: "Roboto";
+            color: black;
+        }
+        
+        .container {
+            margin-top: 20px;
+        }
+        
+        .row:after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+        
+        .column {
+            float: left;
+            padding-left: 20px;
+            padding-right: 60px;
+            box-sizing: border-box;
+        }
+        
+        .col-1 {
+            width: 35%;
+        }
+        
+        .col-2 {
+            width: 15%;
+        }
+        
+        .col-3 {
+            width: 20%;
+        }
+        
+        .col-4 {
+            width: 30%;
+        }
+        
+        h3 {
+            margin-bottom: 20px;
+        }
+        
+        a {
+            line-height: 2;
+            display: block;
+            color: #333;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            a,
+            .col-1,
+            .col-2,
+            .col-3,
+            .col-4 {
+                width: 100%;
+            }
+            .column {
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="column col-1">
+                <h3>Air</h3>
+                <a>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam repellendus maiores, excepturi temporibus vitae impedit sapiente dolor quia at cupiditate et eum laudantium saepe consectetur. Harum ipsa laudantium qui sapiente.</a>
+            </div>
+            <div class="column col-2">
+                <h3>Links</h3>
+                <a>Home</a>
+                <a>Porfolio</a>
+                <a>Blog</a>
+                <a>About</a>
+            </div>
+            <div class="column col-3">
+                <h3>Categories</h3>
+                <a>Landing Page</a>
+                <a>Real Estate</a>
+                <a>Personal</a>
+                <a>Business</a>
+                <a>e-Commerce</a>
+            </div>
+            <div class="column col-4">
+                <h3>Contact Information</h3>
+                <a>198 West 21th Street, Suite 721 New York NY 10016</a>
+                <a>+ 1235 2355 98</a>
+                <a>infor@yoursite.com</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
